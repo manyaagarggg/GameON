@@ -137,6 +137,45 @@ button:hover {
     background-color: #e6b800;
 }
 
+.content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.text-section, .image-section {
+    flex: 1;
+    padding: 20px;
+}
+
+.text-section {
+    order: 1;
+}
+
+.image-section {
+    order: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.image-section img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.text-section h3 {
+    font-size: 24px;
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+.text-section p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+
 footer {
     background-color: #333;
     padding: 10px;
