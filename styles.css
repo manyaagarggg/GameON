@@ -60,40 +60,44 @@ h2 {
     color: #ffcc00;
     text-align: center;
 }
-
-.game-list {
+.games-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    overflow-x: auto;
+    padding: 20px 0;
 }
 
-.game-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px;
-    padding: 15px;
-    background-color: #444;
+.game-card {
+    flex: 0 0 auto;
+    width: 200px;
+    margin-right: 20px;
+    background-color: #333;
     border-radius: 10px;
-    transition: transform 0.3s;
-    width: 150px;
     text-align: center;
+    padding: 10px;
 }
 
-.game-item:hover {
-    transform: scale(1.05);
+.game-card img {
+    width: 100%;
+    border-radius: 10px;
 }
 
-.game-image {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 10px;
-}
-
-.game-link {
+.game-card h3 {
+    font-size: 20px;
     color: #ffcc00;
+    margin: 10px 0;
+}
+
+.play-button {
+    background-color: #ffcc00;
+    color: #333;
+    padding: 10px 20px;
     text-decoration: none;
-    font-size: 18px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.play-button:hover {
+    background-color: #e6b800;
 }
 
 form {
