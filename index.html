@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Platform</title>
+    <title>GameON</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div class="logo">Game Platform</div>
+        <div class="logo">GameON</div>
         <nav>
             <ul class="nav-links">
                 <li><a href="#games">Games</a></li>
+                <li><a href="#premium-games">Premium Games</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="login.html">Login</a></li>
@@ -56,6 +57,26 @@
                     <img src="images/jumbleWord.png" alt="Jumble Word">
                     <h3>Jumble Word</h3>
                     <a href="jumble-word.html" class="play-button">Play Now</a>
+                </div>
+            </div>
+        </section>
+        <section id="premium-games" class="section">
+            <h2>Premium Games</h2>
+            <div class="games-container">
+                <div class="game-card">
+                    <img src="images/templeRun.png" alt="Temple Run">
+                    <h3>Temple Run</h3>
+                    <a href="#" class="play-button" onclick="checkPremiumUser('temple-run.html')">Play Now</a>
+                </div>
+                <div class="game-card">
+                    <img src="images/candyCrush.png" alt="Candy Crush">
+                    <h3>Candy Crush</h3>
+                    <a href="#" class="play-button" onclick="checkPremiumUser('candy-crush.html')">Play Now</a>
+                </div>
+                <div class="game-card">
+                    <img src="images/angryBirds.png" alt="Angry Birds">
+                    <h3>Angry Birds</h3>
+                    <a href="#" class="play-button" onclick="checkPremiumUser('angry-birds.html')">Play Now</a>
                 </div>
             </div>
         </section>
