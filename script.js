@@ -22,23 +22,23 @@ document.addEventListener('DOMContentLoaded', function() {
 
 document.addEventListener('DOMContentLoaded', function() {
     // Smooth Scrolling
-    const navLinks = document.querySelectorAll('nav .nav-links a');
-    navLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href').substring(1);
-            document.getElementById(targetId).scrollIntoView({
-                behavior: 'smooth'
-            });
-            setActiveLink(this);
-        });
-    });
+    // const navLinks = document.querySelectorAll('nav .nav-links a');
+    // navLinks.forEach(link => {
+    //     link.addEventListener('click', function(e) {
+    //         e.preventDefault();
+    //         const targetId = this.getAttribute('href').substring(1);
+    //         document.getElementById(targetId).scrollIntoView({
+    //             behavior: 'smooth'
+    //         });
+    //         setActiveLink(this);
+    //     });
+    // });
 
-    // Highlight Active Link
-    function setActiveLink(link) {
-        navLinks.forEach(navLink => navLink.classList.remove('active'));
-        link.classList.add('active');
-    }
+    // // Highlight Active Link
+    // function setActiveLink(link) {
+    //     navLinks.forEach(navLink => navLink.classList.remove('active'));
+    //     link.classList.add('active');
+    // }
 
     // Login Modal
     const loginButton = document.getElementById('login-button');
@@ -85,14 +85,16 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Theme Toggle
-    const themeToggleButton = document.createElement('button');
-    themeToggleButton.innerText = 'Toggle Theme';
-    themeToggleButton.classList.add('theme-toggle-button');
-    document.body.appendChild(themeToggleButton);
+    // const themeToggleButton = document.createElement('button');
+    // themeToggleButton.innerText = 'Toggle Theme';
+    // themeToggleButton.classList.add('theme-toggle-button');
+    // document.body.appendChild(themeToggleButton);
+
+    const themeToggleButton = document.getElementById('theme-toggle-button');
 
     themeToggleButton.addEventListener('click', function() {
         document.body.classList.toggle('light-theme');
-        navLinks.forEach(link => link.classList.toggle('light-theme'));
+        // navLinks.forEach(link => link.classList.toggle('light-theme'));
     });
 });
 
