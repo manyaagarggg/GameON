@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GameON</title>
+    <link rel="icon" href="images/angryBirds.png"/>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -23,37 +24,37 @@
         <section id="games" class="section">
             <h2>Our Games</h2>
             <div class="games-container">
-                <div class="game-card">
+                <div class="game-card" data-name="Sudoku" data-description="A logic-based number puzzle." data-players="1">
                     <img src="images/sudoku.png" alt="Sudoku">
                     <h3>Sudoku</h3>
                     <a href="https://manyaagarggg.github.io/Sudoku/" class="play-button">Play Now</a>
                 </div>
-                <div class="game-card">
+                <div class="game-card"  data-name="Rock Paper Scissors" data-description="The classic hand game." data-players="2">
                     <img src="images/rockPaperSci.png" alt="Rock Paper Scissors">
                     <h3>Rock Paper Scissors</h3>
                     <a href="https://manyaagarggg.github.io/RockPaperScissors/" class="play-button">Play Now</a>
                 </div>
-                <div class="game-card">
+                <div class="game-card" data-name="Tic Tac Toe" data-description="A two-player pencil-and-paper game." data-players="2">
                     <img src="images/ticTacToe.png" alt="Tic Tac Toe">
                     <h3>Tic Tac Toe</h3>
                     <a href="tic-tac-toe.html" class="play-button">Play Now</a>
                 </div>
-                <div class="game-card">
+                <div class="game-card" data-name="Ludo" data-description="A strategy board game for 2 to 4 players." data-players="2-4">
                     <img src="images/ludo.png" alt="Ludo">
                     <h3>Ludo</h3>
                     <a href="ludo.html" class="play-button">Play Now</a>
                 </div>
-                <div class="game-card">
+                <div class="game-card" data-name="Snake and Ladder" data-description="A board game for 2 or more players." data-players="2+">
                     <img src="images/snakeLad.png" alt="Snake and Ladder">
                     <h3>Snake and Ladder</h3>
                     <a href="snake-and-ladder.html" class="play-button">Play Now</a>
                 </div>
-                <div class="game-card">
+                <div class="game-card" data-name="Scribble" data-description="A word-guessing party game." data-players="2+">
                     <img src="images/scribble.png" alt="Scribble">
                     <h3>Scribble</h3>
                     <a href="scribble.html" class="play-button">Play Now</a>
                 </div>
-                <div class="game-card">
+                <div class="game-card" data-name="Jumble Word" data-description="Unscramble the letters to find the word." data-players="1+">
                     <img src="images/jumbleWord.png" alt="Jumble Word">
                     <h3>Jumble Word</h3>
                     <a href="jumble-word.html" class="play-button">Play Now</a>
@@ -62,18 +63,18 @@
         </section>
         <section id="premium-games" class="section">
             <h2>Premium Games</h2>
-            <div class="premium-games-container">
-                <div class="game-card">
+            <div class="games-container">
+                <div class="game-card" data-name="Temple Run" data-description="An endless running game." data-players="1">
                     <img src="images/templeRun.png" alt="Temple Run">
                     <h3>Temple Run</h3>
                     <a href="#" class="play-button" onclick="checkPremiumUser('temple-run.html')">Play Now</a>
                 </div>
-                <div class="game-card">
+                <div class="game-card" data-name="Candy Crush" data-description="A match-three puzzle game." data-players="1">
                     <img src="images/candyCrush.png" alt="Candy Crush">
                     <h3>Candy Crush</h3>
                     <a href="#" class="play-button" onclick="checkPremiumUser('candy-crush.html')">Play Now</a>
                 </div>
-                <div class="game-card">
+                <div class="game-card" data-name="Angry Birds" data-description="A slingshot-based puzzle game." data-players="1">
                     <img src="images/angryBirds.png" alt="Angry Birds">
                     <h3>Angry Birds</h3>
                     <a href="#" class="play-button" onclick="checkPremiumUser('angry-birds.html')">Play Now</a>
@@ -81,10 +82,30 @@
             </div>
         </section>
     </main>
+    
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Login</h2>
+            <form id="login-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Tooltip -->
+    <div id="tooltip" class="tooltip"></div>
+    <script src="script.js"></script>
+
     <footer>
         <p>&copy; 2024 Game Platform | All Rights Reserved</p>
     </footer>
-    <script src="script.js"></script>
 </body>
 </html>
 
